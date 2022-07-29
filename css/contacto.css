@@ -1,0 +1,40 @@
+/** Estilos formulario **/
+
+.h1-correo {
+    text-align: center;
+}
+
+.div-correo {
+    border: solid;
+    border-color: #5166806e;
+    color: #34465c;
+    margin: 10px auto;
+    max-width: 800px;
+    display: block;
+}
+
+.correo-titulo {
+    text-align: center;
+    border-bottom: solid;
+    border-color: #5166806e;
+    padding-bottom: 10px;
+}
+
+.tabla-correo {
+    margin: 0 auto;
+    list-style: none;
+    font-size: 18px;
+    max-width: 800px;
+}
+
+tr {
+    max-width: 800px;
+}
+
+td {
+    padding: 5px 15px;
+}
+
+td:first-child {
+    font-weight: bold;
+}
