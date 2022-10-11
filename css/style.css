@@ -942,6 +942,7 @@ textarea {
     align-items: center;
 }
 
-.error {
+.mensaje-error {
+    display: none;
     color: red;
 }

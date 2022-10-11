@@ -19,7 +19,7 @@ $(document).ready(function() {
 
         validarCampoEmail($('#email'));
 
-        if ($(".error").toArray().length > 0) {
+        if ($(".mensaje-error").toArray().length > 0) {
             $('#mensaje-error').show();
             event.preventDefault();
         } else {
