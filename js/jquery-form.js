@@ -26,4 +26,11 @@ $(document).ready(function() {
             $('#mensaje-error').hide();
         }
     });
+
+    // Listener para validar campo telefono
+    $("#telefono").keypress(function(event) {
+        const largoIngresado = $(this).val().toString().length;
+
+        return validarSoloNumero(event, largoIngresado);
+    });
 });
