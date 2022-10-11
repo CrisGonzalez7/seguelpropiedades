@@ -941,3 +941,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
+
+.error {
+    color: red;
+}
