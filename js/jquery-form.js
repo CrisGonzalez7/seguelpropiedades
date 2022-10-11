@@ -5,7 +5,7 @@ $(document).ready(function() {
             width: 'toggle'
         }, 300);
     });
-    
+    // Formulario
     $('#mensaje-error').hide();
 
     //validacion: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur
