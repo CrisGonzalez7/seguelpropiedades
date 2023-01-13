@@ -3,7 +3,8 @@
  * 
  * @param campoEmail a validar
  */
-function validarCampoEmail(campoEmail) {
+
+/* function validarCampoEmail(campoEmail) {
     var caract = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
 
     if (caract.test($(campoEmail).val()) == false) {
@@ -12,6 +13,7 @@ function validarCampoEmail(campoEmail) {
         $(campoEmail).removeClass('mensaje-error');
     }
 }
+*/
 
 /**
  * Valida que el caracter ingresado sea numero, además acepta la tecla borrar
