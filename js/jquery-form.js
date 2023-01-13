@@ -6,13 +6,15 @@ $(document).ready(function() {
         }, 300);
     });
     // Formulario
-    $('#mensaje-error').hide();
 
-    //validacion: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur
-    //https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event
+    /* validacion: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur
+    https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event */
+    
+     $('#mensaje-error').hide();
+
     $("#email").blur(function() {
         validarCampoEmail(this);
-    });
+    }); 
 
     // Listener para validar envío de formulario
     $("#form").submit(function(event) {
