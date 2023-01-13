@@ -12,3 +12,23 @@ function validarCampoEmail(campoEmail) {
         $(campoEmail).removeClass('mensaje-error');
     }
 }
+
+/**
+ * Valida que el caracter ingresado sea numero, además acepta la tecla borrar
+ * @param evt evento a validar
+ * @returns si la tecla es un caracter valido
+ */
+function validarSoloNumero(evt, largoIngresado){
+    // obtiene el codigo de la tecla presionada
+    var code = (evt.which) ? evt.which : evt.keyCode;
+
+    if (largoIngresado === 0 && code === 43) {// Si el campo no tiene ningún valor ingresado permite ingreso de signo más (43)
+      return true;
+    } else if (code===8) { // codigo ASCII que representa borrar (8)
+      return true;
+    } else if (code>=48 && code<=57) { // codigos ACSII que representa las teclas del 1 al 9
+      return true;
+    } else { // other keys.
+      return false;
+    }
+}
