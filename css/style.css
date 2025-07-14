@@ -28,9 +28,14 @@ img {
 }
 
 .contenedor {
-    width: 95%;
+    /* width: 95%; */
     max-width: 120rem;
     /** = 1200 px **/
+    margin: 0 auto;
+}
+
+.contenedor-contenido {
+    max-width: 100rem;
     margin: 0 auto;
 }
 
@@ -150,7 +155,7 @@ p {
 }
 
 .site-header-inicio {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/imagen\ home.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/imagen-inicio.jpg);
     background-position: center center;
     background-size: cover;
     height: 95vh;
@@ -460,7 +465,7 @@ ul {
 }
 
 
-/** Nosotros Home **/
+/** Nosotros Inicio **/
 
 @media (min-width: 768px) {
     .sobre-nosotros {
@@ -544,7 +549,7 @@ ul {
 
 @media (min-width: 768px) {
     .seccion-inferior {
-        margin: 40px 0 0 0;
+        /* margin: 40px 0 0 0; */
         padding-bottom: 40px;
         display: flex;
     }
@@ -582,7 +587,7 @@ ul {
 }
 
 
-/* Contacto Home */
+/* Contacto Inicio */
 
 .contenedor-whatsapp {
     padding: 20px 0;
