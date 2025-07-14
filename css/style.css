@@ -28,9 +28,14 @@ img {
 }
 
 .contenedor {
-    width: 95%;
+    /* width: 95%; */
     max-width: 120rem;
     /** = 1200 px **/
+    margin: 0 auto;
+}
+
+.contenedor-contenido {
+    max-width: 100rem;
     margin: 0 auto;
 }
 
@@ -544,7 +549,7 @@ ul {
 
 @media (min-width: 768px) {
     .seccion-inferior {
-        margin: 40px 0 0 0;
+        /* margin: 40px 0 0 0; */
         padding-bottom: 40px;
         display: flex;
     }
