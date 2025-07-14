@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Veronica Gonzalez">
+    <meta name="author" content="Cris Gonzalez">
     <title>Seguel Propiedades</title>
     <!-- Cache -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -20,17 +20,14 @@
 </head>
 
 <body>
-    <!--Header-->
-    <header class="site-header-inicio">
+    <header class="site-header">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <!--Logo-->
                 <a href="/">
                     <img class="logo" src="img/logo-seguelpropiedades.png" alt="Logo Seguel Propiedades">
                 </a>
-                <!--Navegación Escritorio-->
                 <nav class="navegacion">
-                    <a href="/">Inicio</a>
+                    <a href="/">Home</a>
                     <a href="/nosotros.html">Nosotros</a>
                     <a href="/contacto.html">Contacto</a>
                     <a href="/confia.html">
@@ -38,115 +35,102 @@
                     </a>
                 </nav>
             </div>
-            <!--Encabezado (Título)-->
-            <div class="titulo">
-                <h1 class="centrar-texto">Venta y arriendo de propiedades</h1>
-                <h2 class="ubicacion centrar-texto"><img src="img/ubicacion-seguel-propiedades.ico" alt="Ubicación">V región</h2>
-            </div>
         </div>
     </header>
 
-    <!--Menu Mobile-->
-    <div class="mobile-menu-index">
-        <!--Icono WhatsApp -->
+    <div class="mobile-menu">
         <div class="whatsapp-barra">
             <a class="enlace-whats" href="https://wa.me/56945702579"><img src="img/whatsapp-barra-2.png" alt=""></a>
         </div>
-        <!--Logo Mobile-->
+
+        <div id='slide_nav'>
+            <p id="slide_nav_button">☰</p>
+        </div>
         <div class="logo-mobile">
             <a href="/">
                 <img src="img/logo-seguelpropiedades.png" alt="Logo Seguel Propiedades">
             </a>
         </div>
-        <!--Boton Navegación-->
-        <div id='slide_nav'>
-            <p id="slide_nav_button">☰</p>
-        </div>
-        <!--Slide Menu-->
+
         <ul id='slide_menu'>
-            <li><a href="/">Inicio</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/nosotros.html">Nosotros</a></li>
             <li><a href="/contacto.html">Contacto</a></li>
-            <!--Confía-->
             <li><a class="confia" href="/confia.html">Confíanos tu propiedad</a></li>
         </ul>
     </div>
 
-    <!--Nosotros Inicio-->
-    <section class="contenedor-contenido seccion">
-        <div class="sobre-nosotros">
-            <!--Despreocúpate-->
-            <div class="div-nosotros">
-                <img class="icono" src="img/contento.ico" alt="Icono Despreocúpate">
-                <h3>Despreocúpate</h3>
-                <p>Vende tu <strong>propiedad</strong> con nosotros: Sea que se trate de una <strong>casa</strong> o un <strong>departamento,</strong> nos encargaremos de todos los detalles por ti. </p>
-            </div>
-            <!--Confía-->
-            <div class="div-nosotros">
-                <img class="icono" src="img/acuerdo.ico" alt="Icono Confía">
-                <h3>Confía</h3>
-                <p>Somos una empresa seria que siempre estaremos dispuestos a resolver tus dudas para que te encuentres tranquilo en el <strong>proceso de venta.</strong></p>
-            </div>
-            <!--Disfruta-->
-            <div class="div-nosotros">
-                <img class="icono" src="img/familia.ico" alt="Icono Disfruta">
-                <h3>Disfruta</h3>
-                <p>Nuestra idea es facilitarte el <strong>proceso</strong> para que puedas ocupar tu tiempo libre en disfrutar junto a los tuyos.</p>
-            </div>
-        </div>
-    </section>
+    <main class="contenedor seccion">
+        <h2 class="centrar-texto">Confíanos tu propiedad</h2>
 
-    <!--WhatsApp Flotante-->
+        <form class="formulario" action="correo-confia.php" method="post">
+            <fieldset class="formulario-contacto">
+                <legend>Propiedad</legend>
+
+                <div class="contacto-div">
+                    <label>Tipo de propiedad</label>
+                    <select id="opciones" name="tipoPropiedad" required>
+                        <option value="" disabled selected>-- Seleccione --</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Departamento">Departamento</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label>Otro</label>
+                    <input type="text" name="otro" placeholder="Terreno, oficina, etc.">
+
+                    <label>Dirección</label>
+                    <input type="text" name="direccion" placeholder="Dirección" required>
+
+                    <label>Comuna</label>
+                    <input type="text" name="comuna" placeholder="Comuna" required>
+
+                    <label>Estado de la propiedad</label>
+                    <select id="opciones" name="estadoPropiedad" required>
+                        <option value="" disabled selected>-- Seleccione --</option>
+                        <option value="Arriendo">Arriendo</option>
+                        <option value="Venta">Venta</option>
+                    </select>
+                </div>
+                <div class="contacto-div">
+                    <label>Metros construidos</label>
+                    <input type="number" name="metrosConstruidos" placeholder="En metros cuadrados" required>
+
+                    <label>Dimensiones del terreno</label>
+                    <input type="number" name="dimensionesTerreno" placeholder="En metros cuadrados" required>
+
+                    <label>Cantidad de dormitorios</label>
+                    <input type="number" name="dormitorios" placeholder="Dormitorios">
+
+                    <label>Cantidad de baños</label>
+                    <input type="number" name="bannos" placeholder="Baños">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Propietario</legend>
+                <div class="contacto-2">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu telefono" required>
+
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+
+                    <input type="submit" value="Enviar" class="boton boton-verde enviar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
     <div class="whatsapp-flotante">
         <a class="enlace-whats" href="https://wa.me/56945702579"><img class="whatsapp-img" src="img/whatsapp-flotante.ico" alt="WhatsApp"></a>
     </div>
-
-    <!--Servicios/Contacto-->
-    <section class="contenedor-contenido seccion-inferior">
-        <!--Servicios-->
-        <div class="div-inferior">
-            <img class="img-servicios" src="img/Servicios.png" alt="Imagen Servicios">
-            <h2 class="titulo-h2">Nuestros servicios</h2>
-            <p class="texto-p">Como empresa ofrecemos los siguientes servicios:
-                <li><strong>Compra de propiedades</strong></li>
-                <li><strong>Venta de propiedades</strong></li>
-                <li><strong>Administración de propiedades</strong></li>
-                <li><strong>Asesoría legal</strong></li>
-        </div>
-        <!--Contacto Inicio-->
-        <div class="div-inferior">
-            <div class="contenedor-whatsapp">
-                <div class="icono-whats">
-                    <img src="img/whatsapp.svg" alt="WhatsApp">
-                </div>
-                <h2 class="titulo-h2">Contacto</h2>
-                <p class="texto-p">Si tienes dudas o estás interesado/a en nuestros servicios, contáctanos.
-                </p>
-                <!--Botón WhatsApp Azul-->
-                <a href="https://wa.me/56945702579"><img class="whatsapp" src="img/contacto-whatsapp.png" alt="Contacto WhatsApp"></a>
-            </div>
-        </div>
-        <!--Perfil Cecilia-->
-        <div class="div-inferior">
-            <img class="logo-perfil" src="img/logo-seguel-2.png" alt="Logo">
-            <p><b>Cecilia Vanessa Seguel Peña</b></p>
-            <div class="datos-perfil">
-                <div class="perfil">
-                    <img class="img-perfil" src="img/celular.png" alt="celular">
-                    <p class="p-perfil">+56945702579</p>
-                </div>
-                <div class="perfil">
-                    <img class="img-perfil" src="img/correo.png" alt="correo">
-                    <p class="p-perfil">cecilia@seguelpropiedades.cl
-                        <br>contacto@seguelpropiedades.cl</p>
-                </div>
-                <div class="perfil">
-                    <img class="img-perfil" src="img/web.png" alt="web">
-                    <p class="p-perfil">Verifica mi perfil en <br><a href="https://www.corredordepropiedades.cl/agent/cecilia-vanessa-seguel-pena/">corredordepropiedades.cl</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!--Footer-->
     <footer class="site-footer seccion">
