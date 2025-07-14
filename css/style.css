@@ -150,7 +150,7 @@ p {
 }
 
 .site-header-inicio {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/imagen\ home.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/imagen-inicio.jpg);
     background-position: center center;
     background-size: cover;
     height: 95vh;
@@ -460,7 +460,7 @@ ul {
 }
 
 
-/** Nosotros Home **/
+/** Nosotros Inicio **/
 
 @media (min-width: 768px) {
     .sobre-nosotros {
@@ -582,7 +582,7 @@ ul {
 }
 
 
-/* Contacto Home */
+/* Contacto Inicio */
 
 .contenedor-whatsapp {
     padding: 20px 0;

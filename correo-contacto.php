@@ -115,7 +115,7 @@
                     <img class="logo" src="img/logo-seguelpropiedades.png" alt="Logo Seguel Propiedades">
                 </a>
                 <nav class="navegacion">
-                    <a href="/">Home</a>
+                    <a href="/">Inicio</a>
                     <a href="/nosotros.html">Nosotros</a>
                     <a href="/contacto.html">Contacto</a>
                     <a href="/confia.html">
@@ -141,7 +141,7 @@
         </div>
 
         <ul id='slide_menu'>
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
             <li><a href="/nosotros.html">Nosotros</a></li>
             <li><a href="/contacto.html">Contacto</a></li>
             <li><a class="confia" href="/confia.html">Confíanos tu propiedad</a></li>
@@ -180,7 +180,7 @@
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="/">Home</a>
+                <a href="/">Inicio</a>
                 <a href="/nosotros.html">Nosotros</a>
                 <a href="/contacto.html">Contacto</a>
             </nav>
