@@ -155,7 +155,7 @@
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/">
-                    <img class="logo" src="img/logo-seguelpropiedades.png" alt="Logo Seguel Propiedades">
+                    <img class="logo" src="img/logo-seguelpropiedades.webp" alt="Logo Seguel Propiedades">
                 </a>
                 <nav class="navegacion">
                     <a href="/">Inicio</a>
@@ -179,7 +179,7 @@
         </div>
         <div class="logo-mobile">
             <a href="/">
-                <img src="img/logo-seguelpropiedades.png" alt="Logo Seguel Propiedades">
+                <img src="img/logo-seguelpropiedades.webp" alt="Logo Seguel Propiedades">
             </a>
         </div>
 
