@@ -155,7 +155,7 @@ p {
 }
 
 .site-header-inicio {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/imagen-inicio.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/imagen-inicio_mobile.webp);
     background-position: center center;
     background-size: cover;
     height: 95vh;
@@ -163,6 +163,7 @@ p {
 
 @media (min-width: 768px) {
     .site-header-inicio {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/imagen-inicio.jpg);
         height: 100vh;
     }
 }
